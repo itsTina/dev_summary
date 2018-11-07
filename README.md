@@ -8,7 +8,9 @@
 使用popState事件监听history 的state变化；
 
     window.addEventListener('popstate', this.onPopState);
+    
     // 初入页面就给history添加state记录, 这样用户点击了返回键就可以监听到popState事件变化了
+    
     window.history.pushState(this.pageIndex++, 'current');
     
 // 以下是部分代码
